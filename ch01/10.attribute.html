@@ -7,7 +7,7 @@
             a[target] {
                 border: .1rem solid;
             }
-
+            /* 텍스트에 선을 넣어주는 속성 */
             a[href='fire.html']{
                 text-decoration: none;
             }
@@ -21,11 +21,21 @@
             a[class|='best'] {
                 border: .1rem dotted;
             }
-            
-            a[class|='best'] {
-                color: red;
+
+            /* best로 시작하면 */
+            a[class^='best'] {
+                background: lightgreen;
+            }
+
+            /* best로 끝나면 */
+            a[class$='best'] {
+                background: pink;
             }
             
+            /* best가 포함되면 */
+            a[class*='best'] {
+                color: red;
+            }
         </style>
     </head>
     <body>
