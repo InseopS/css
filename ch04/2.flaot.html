@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>flaot</title>
+        <style>
+            div {
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid;
+                /* 자동할당 된 크기의 block에 float 속성을 쓰지 않으면 width가 동적으로 변한다. */
+                float: left;
+            }
+
+            .one {
+                background: red;
+            }
+
+            .two {
+                background: orange;
+            }
+
+            .three {
+                background: yellow;
+                clear: left;
+            }
+
+            .four {
+                background: green;
+                clear: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='one'>one</div>
+        <div class='two'>two</div>
+        <div class='three'>three</div>
+        <div class='four'>four</div>
+    </body>
+</html>
